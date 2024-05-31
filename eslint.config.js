@@ -14,7 +14,7 @@ export default [
       parser,
       files: [
         "src/**/*.ts",
-        "types/**/*.ts",
+        "types/**/*.d.ts",
       ],
     },
   ).configs,
