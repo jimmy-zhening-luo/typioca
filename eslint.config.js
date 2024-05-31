@@ -12,7 +12,10 @@ export default [
     {
       ts,
       parser,
-      files: ["src/**/*.ts"],
+      files: [
+        "src/**/*.ts",
+        "types/**/*.ts",
+      ],
     },
   ).configs,
 ];
