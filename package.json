@@ -1,6 +1,6 @@
 {
   "name": "@jimbojet/types",
-  "version": "0.1.0-dev.1",
+  "version": "0.1.0-dev.2",
   "description": "TypeScript utility types for strings, iterables (array, tuple), and interfaces (property, table).",
   "type": "module",
   "private": false,
