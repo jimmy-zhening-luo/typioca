@@ -1,0 +1,38 @@
+{
+  "name": "{NAME}",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy-zhening-luo/{REPO}.git"
+  },
+  "author": "Jimmy Zhening Luo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimmy-zhening-luo/{REPO}/issues"
+  },
+  "homepage": "https://github.com/jimmy-zhening-luo/{REPO}#readme",
+  "scripts": {
+    "lint": "eslint --cache --cache-strategy content -c eslint.config.js *.config.js src/**/*",
+    "lint:fix": "npm run lint -- --fix",
+    "prebuild": "npm run lint:fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run build",
+    "test": "exit 1",
+    "dev": "npm test"
+  },
+  "devDependencies": {
+    "@jimbojet/lint": "~8.0.18",
+    "@stylistic/eslint-plugin": "~2.1.0",
+    "@typescript-eslint/eslint-plugin": "~7.11.0",
+    "@typescript-eslint/parser": "~7.11.0",
+    "eslint": "~8.57.0",
+    "typescript": "^5.4.5"
+  }
+}
