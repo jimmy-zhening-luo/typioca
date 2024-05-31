@@ -1,20 +1,24 @@
 {
-  "name": "{NAME}",
+  "name": "@jimbojet/types",
   "version": "0.0.0",
   "description": "",
   "type": "module",
-  "private": true,
-  "main": "dist/index.js",
+  "private": false,
+  "main": "",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/types"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/{REPO}.git"
+    "url": "git+https://github.com/jimmy-zhening-luo/types.git"
   },
   "author": "Jimmy Zhening Luo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/{REPO}/issues"
+    "url": "https://github.com/jimmy-zhening-luo/types/issues"
   },
-  "homepage": "https://github.com/jimmy-zhening-luo/{REPO}#readme",
+  "homepage": "https://github.com/jimmy-zhening-luo/types#readme",
   "scripts": {
     "lint": "eslint --cache --cache-strategy content -c eslint.config.js *.config.js src/**/*",
     "lint:fix": "npm run lint -- --fix",
@@ -24,7 +28,7 @@
     "start": "node .",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build",
-    "test": "exit 1",
+    "test": "node dist/test/index.js",
     "dev": "npm test"
   },
   "devDependencies": {
