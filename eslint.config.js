@@ -6,7 +6,7 @@ export default [
     stylistic,
     {
       js: ["*.config.js"],
-      ts:[
+      ts: [
         "src/**/*.ts",
         "types/**/*.d.ts",
       ],
