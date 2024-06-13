@@ -1,6 +1,6 @@
 {
   "name": "mytype",
-  "version": "0.1.0-dev.10",
+  "version": "0.1.0-dev.11",
   "description": "TypeScript utility types for strings, iterables (array, tuple), and interfaces (property, table).",
   "type": "module",
   "private": false,
