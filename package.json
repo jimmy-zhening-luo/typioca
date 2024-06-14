@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/types.git"
+    "url": "git+https://github.com/jimmy-zhening-luo/typioca.git"
   },
   "author": "Jimmy Zhening Luo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/types/issues"
+    "url": "https://github.com/jimmy-zhening-luo/typioca/issues"
   },
-  "homepage": "https://github.com/jimmy-zhening-luo/types#readme",
+  "homepage": "https://github.com/jimmy-zhening-luo/typioca#readme",
   "scripts": {
     "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
     "lint": "npm run lint:cfg && npm run lint:src && npm run lint:ci",
