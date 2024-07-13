@@ -2,42 +2,56 @@
   "name": "typioca",
   "version": "0.3.0-dev.1",
   "description": "TypeScript utility types for strings, iterables (array, tuple), and interfaces (property, table).",
+  "keywords": [],
+  "license": "MIT",
   "type": "module",
   "private": false,
-  "main": "",
-  "types": "src/types/index.d.ts",
-  "files": [
-    "types"
-  ],
+  "config": {
+    "PACKAGE_JSON_VERSION": "20.8.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimmy-zhening-luo/typioca.git"
   },
-  "author": "Jimmy Zhening Luo",
-  "license": "MIT",
+  "homepage": "https://github.com/jimmy-zhening-luo/typioca#readme",
   "bugs": {
     "url": "https://github.com/jimmy-zhening-luo/typioca/issues"
   },
-  "homepage": "https://github.com/jimmy-zhening-luo/typioca#readme",
-  "scripts": {
-    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
-    "lint": "npm run lint:cfg && npm run lint:src",
-    "lint:cfg": "npm run lint:cfg:pkg && npm run lint:cfg:tsc && npm run lint:cfg:linter",
-    "lint:cfg:pkg": "npm run es -- package.json",
-    "lint:cfg:tsc": "npm run es -- tsconfig.json",
-    "lint:cfg:linter": "npm run es -- eslint.config.js",
-    "lint:src": "npm run lint:src:ts",
-    "lint:src:ts": "npm run es -- src/**/*.ts",
-    "prebuild": "npm run lint",
-    "build": "tsc",
-    "pretest": "npm run build",
-    "test": "node dist/test/index.js",
-    "prepublishOnly": "npm test",
-    "prestart": "npm test"
+  "author": {
+    "name": "Jimmy Zhening Luo",
+    "email": "1450044+jimmy-zhening-luo@users.noreply.github.com",
+    "url": "https://jimm.my"
   },
+  "main": "",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {},
+  "peerDependenciesMeta": {},
+  "optionalDependencies": {},
+  "dependencies": {},
   "devDependencies": {
-    "@jimbojet/lint": "~10.8.1",
     "eslint": "~8.57.0",
-    "typescript": "^5.4.5"
+    "linted": "~14.1.1",
+    "typescript": "^5.5.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/src/"
+    ]
+  },
+  "scripts": {
+    "eslint": "eslint --cache --fix",
+    "lint:source": "npm run eslint -- src/**/*.{js,ts,html}",
+    "lint:configs": "npm run eslint -- {*,.github/workflows/*}.{json,jsonc,js,ts,yml}",
+    "lint": "(npm run --if-present lint:svelte) && (npm run lint:source) && (npm run lint:configs)",
+    "prebuild": "npm run lint",
+    "build": "(vite build) || (tsc)",
+    "pretest": "npm run build",
+    "test": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_NO_WARNINGS=1 jest --passWithNoTests --",
+    "prepublishOnly": "npm test",
+    "prestart": "npm test",
+    "start": "(vite preview) || (node .)",
+    "preaction": "npm test",
+    "action": "exit 0"
   }
 }
