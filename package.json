@@ -1,8 +1,13 @@
 {
   "name": "typioca",
   "version": "0.3.0-rc.1",
-  "description": "TypeScript utility types for strings, iterables (array, tuple), and interfaces (property, table).",
-  "keywords": [],
+  "description": "TypeScript utility types for constraining and transforming primitives, iterables, and interfaces.",
+  "keywords": [
+    "typescript",
+    "utility-types",
+    "types",
+    "module"
+  ],
   "license": "MIT",
   "type": "module",
   "private": false,
