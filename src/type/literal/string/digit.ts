@@ -1,4 +1,4 @@
-declare type digit =
+export type digit =
   | "0"
   | "1"
   | "2"
@@ -8,5 +8,4 @@ declare type digit =
   | "6"
   | "7"
   | "8"
-  | "9"
-;
+  | "9";

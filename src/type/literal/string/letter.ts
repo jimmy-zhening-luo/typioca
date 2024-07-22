@@ -1,11 +1,8 @@
-declare type letter =
+export type letter =
   | lower
-  | upper
-;
-
-declare type lower = Lowercase<upper>;
-
-declare type upper =
+  | upper;
+export type lower = Lowercase<upper>;
+export type upper =
   | "A"
   | "B"
   | "C"
@@ -31,5 +28,4 @@ declare type upper =
   | "W"
   | "X"
   | "Y"
-  | "Z"
-;
+  | "Z";

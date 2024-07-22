@@ -1,4 +1,6 @@
-declare type base64 =
+import type { base32 } from "./base32.js";
+
+export type base64 =
   | base32
   | 32
   | 33
@@ -31,5 +33,4 @@ declare type base64 =
   | 60
   | 61
   | 62
-  | 63
-;
+  | 63;

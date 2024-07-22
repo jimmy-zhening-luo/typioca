@@ -1,4 +1,6 @@
-declare type base32 =
+import type { hex } from "./hex.js";
+
+export type base32 =
   | hex
   | 16
   | 17
@@ -15,5 +17,4 @@ declare type base32 =
   | 28
   | 29
   | 30
-  | 31
-;
+  | 31;
