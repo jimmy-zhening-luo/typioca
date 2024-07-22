@@ -27,7 +27,7 @@
     "email": "1450044+jimmy-zhening-luo@users.noreply.github.com",
     "url": "https://jimm.my"
   },
-  "main": "",
+  "main": "dist/index.ts",
   "types": "dist/index.d.ts",
   "peerDependencies": {},
   "peerDependenciesMeta": {},
