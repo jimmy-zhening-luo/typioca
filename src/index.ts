@@ -1,1 +1,17 @@
-export type * from "./type/literal.js";
+export type {
+  binary,
+  ternary,
+  quatral,
+  octal,
+  decimal,
+  hex,
+  base32,
+  base64,
+  digit,
+  letter,
+  lower,
+  upper,
+  hexchar,
+  base64char,
+  base64paddedchar,
+} from "./type/literal.js";
