@@ -1,6 +1,6 @@
 {
   "name": "typioca",
-  "version": "0.3.0-rc.2",
+  "version": "0.3.0-rc.3",
   "description": "TypeScript utility types for constraining and transforming primitives, iterables, and interfaces.",
   "keywords": [
     "typescript",
