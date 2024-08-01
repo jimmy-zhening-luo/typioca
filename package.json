@@ -1,4 +1,5 @@
 {
+  "_schemaVersion": "20.14.0",
   "name": "typioca",
   "version": "0.3.0-rc.5",
   "description": "TypeScript utility types for constraining and transforming primitives, iterables, and interfaces.",
@@ -9,35 +10,29 @@
     "module"
   ],
   "license": "MIT",
-  "type": "module",
   "private": false,
-  "config": {
-    "PACKAGE_JSON_VERSION": "20.9.1"
+  "publishConfig": {
+    "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/typioca.git"
-  },
+  "repository": "github:jimmy-zhening-luo/typioca",
   "homepage": "https://github.com/jimmy-zhening-luo/typioca#readme",
-  "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/typioca/issues"
-  },
-  "author": {
-    "name": "Jimmy Zhening Luo",
-    "email": "1450044+jimmy-zhening-luo@users.noreply.github.com",
-    "url": "https://jimm.my"
-  },
-  "main": "dist/index.ts",
+  "bugs": "https://github.com/jimmy-zhening-luo/typioca/issues",
+  "type": "module",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=20.15.0",
+    "npm": ">=10.7.0"
+  },
   "peerDependencies": {},
   "peerDependenciesMeta": {},
-  "optionalDependencies": {},
   "dependencies": {},
   "devDependencies": {
-    "eslint": "~8.57.0",
-    "linted": "~15.1.2",
+    "eslint": "~9.8.0",
+    "linted": "~16.0.2",
     "npm-run-all": "^4.1.5",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "scripts": {
     "build": "run-s \"build:{1}:*\" lint:built  --  ts",
@@ -58,5 +53,6 @@
     "prepublishOnly": "npm test",
     "predeploy": "npm test",
     "deploy": ""
-  }
+  },
+  "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
